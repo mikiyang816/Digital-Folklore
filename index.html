@@ -40,12 +40,12 @@
       .image-container img {
         width: 150px;
         margin-bottom: 10px;
-        animation: bounce 3s infinite alternate;
+        animation: bounce 4s infinite alternate;
       }
 
       @keyframes bounce {
         0%, 100% {
-          transform: translateY(0);
+          transform: translateY(0px);
         }
         50% {
           transform: translateY(-20px);
@@ -63,28 +63,40 @@
 
       .image-container-right img {
         width: 150px;
-        margin-bottom: 10px;
-        animation: bounce 3s infinite alternate;
+        margin-bottom: 5px;
+        animation: bounce 4s infinite alternate;
       }
 
       .small-text1 {
-        font-size: 40px;
+        font-size: 50px;
         font-family: 'Oswald', sans-serif;
+        align-items: center;
         margin-right: 40px;
+        color:  #b482ae;
       }
 
       .small-text2 {
-        font-size: 30px;
+        font-size: 35px;
         font-family: 'Oswald', sans-serif;
+        align-items: center;
         margin-left: 30px;
+        color:  #b350a7;
       }
 
       #play-button {
         position: absolute;
-        bottom: -10px;
+        bottom: -450px;
         left: 200px;
         cursor: pointer;
       }
+      
+      .centered-image {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        margin-top: 10px; 
+      }
+      
     </style>
   </head>
   <body>
@@ -122,9 +134,12 @@
       <img src="gr.jpeg" alt="Image 10">
     </div>
 
-    <h1 class="big-purple">Miki Yang 🐑</h1>
-    <div class="small-text1">ESTJ</div>
-    <div class="small-text2">Chengdu, HK, CT, Chi, NYC</div>
+    <h1 class="big-purple">Miki Y 🐑</h1>
+    <div class="small-text1">August 16th. 2002, ESTJ</div>
+    <div class="small-text2">Chengdu, Canton, Boston, CT, Chi, NYC</div>
+    <div class="centered-image">
+  <img src="miki.jpeg" alt="Centered Image">
+</div>
 
     <img id="play-button" src="musicspeaker.png" alt="Play Button" onclick="playAudio()">
 
