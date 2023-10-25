@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Digital-Folklore-Assignment</title>
-    <link rel="stylesheet" href="#">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap">
+
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
 
@@ -15,44 +17,57 @@
         background-position: center;
         background-attachment: fixed;
         background-repeat: no-repeat;
+        text-align: center; /* Center-align all text within the body */
       }
 
       h1 {
         color: white;
         font-size: 10vw;
-        text-align: center;
+        margin-right: 20px; /* Add margin to the right for horizontal alignment */
       }
 
       h2 {
         color: #e885dc;
         font-size: 50px;
-        text-align: center;
+        margin-left: 20px; /* Add margin to the left for horizontal alignment */
       }
 
       .image-container {
         float: left;
         margin-right: 20px;
-        clear: left; 
+        clear: left;
       }
 
       .image-container-right {
-        float: right; 
-        margin-left: 20px; 
-        clear: right; 
+        float: right;
+        margin-left: 40px;
+        clear: right;
       }
-      
-    .image-container img,
+
+      .small-text1 {
+        font-size: 30px;
+        font-family: 'Oswald', sans-serif;
+        margin-right: 20px; 
+
+      .small-text2 {
+        font-size: 20px;
+        font-family: 'Oswald', sans-serif; 
+        margin-left: 20px; 
+      }
+
+      .image-container img,
       .image-container-right img {
         width: 150px;
         margin-bottom: 10px;
-        animation: bounce 3s infinite alternate; 
+        animation: bounce 3s infinite alternate;
       }
 
       @keyframes bounce {
         0%, 100% {
           transform: translateY(0);
+        }
         50% {
-          transform: translateY(-20px); 
+          transform: translateY(-20px);
         }
       }
     </style>
@@ -80,8 +95,8 @@
     </div>
 
     <h1 class="big-purple">Miki Yang</h1>
-    <h2> 杨运帷</h2>
-    <h1 class="big-purple"> Panda Lover </h1>
-    <h1 class="big-purple"> Chengdu, HK, CT, Chi, NYC </h1>
+    <h2> ESTJ</h2>
+    <div class="small-text1">Panda Lover</div>
+    <div class="small-text2">Chengdu, HK, CT, Chi, NYC</div>
   </body>
 </html>
