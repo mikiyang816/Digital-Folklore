@@ -2,7 +2,7 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8">
-    <title>Digital-Folklore-Assignment</title>
+    <title>Miki-Digital-Folklore-Assignment</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap">
 
@@ -86,7 +86,7 @@
       #play-button {
         position: absolute;
         bottom: -450px;
-        left: 200px;
+        left: 100px;
         cursor: pointer;
       }
       
@@ -94,7 +94,19 @@
         display: flex;
         justify-content: right;
         align-items: center;
-        margin-top: 10px; 
+        margin-top: 30px;
+      }
+      
+      .intro-text {
+        display: inline-block;
+        background-color: #e885dc; 
+        color: white;
+        padding: 50px; 
+        width: 250px; 
+        text-align: center;
+        margin-left: -40px; 
+        margin-top: -600px;
+        font-size: 20px; 
       }
       
     </style>
@@ -147,6 +159,10 @@
       <source src="the-loyalist-eastridge-turnstile.mp3" type="audio/mpeg">
     </audio>
 
+    <div class="intro-text">
+      <p>Client at UChicago, student at everywhere else. Dim Sum is overrated. Hate global warming but love el niño winter at Chicago. Speak Tibetan. Art student doing banking- oh no. Phone number is 000-000-0000. Address is Earth. Wish is to be rich.</p>
+    </div>
+    
     <script>
       function playAudio() {
         var audio = document.getElementById('audio-player');
