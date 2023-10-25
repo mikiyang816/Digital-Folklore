@@ -5,6 +5,7 @@
     <title>Digital-Folklore-Assignment</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=YourFont2&display=swap">
 
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
@@ -17,19 +18,21 @@
         background-position: center;
         background-attachment: fixed;
         background-repeat: no-repeat;
-        text-align: center; /* Center-align all text within the body */
+        text-align: center;
+        position: relative; 
+        height: 100vh; 
       }
 
       h1 {
         color: white;
         font-size: 10vw;
-        margin-right: 20px; /* Add margin to the right for horizontal alignment */
+        margin-right: 20px; 
       }
 
       h2 {
         color: #e885dc;
         font-size: 50px;
-        margin-left: 20px; /* Add margin to the left for horizontal alignment */
+        margin-left: 20px; 
       }
 
       .image-container {
@@ -40,18 +43,20 @@
 
       .image-container-right {
         float: right;
-        margin-left: 40px;
+        margin-left: 20px;
         clear: right;
       }
 
+    
       .small-text1 {
-        font-size: 30px;
+        font-size: 24px;
         font-family: 'Oswald', sans-serif;
         margin-right: 20px; 
+      }
 
       .small-text2 {
-        font-size: 20px;
-        font-family: 'Oswald', sans-serif; 
+        font-size: 18px;
+        font-family: 'YourFont2', sans-serif; 
         margin-left: 20px; 
       }
 
@@ -70,6 +75,13 @@
           transform: translateY(-20px);
         }
       }
+
+      #play-button {
+        position: absolute;
+        bottom: 20px; 
+        left: 20px; 
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
@@ -83,7 +95,6 @@
       <img src="redpanda.webp" alt="Image 3">
     </div>
 
-    <!-- Right Images -->
     <div class="image-container-right">
       <img src="xiongmao.webp" alt="Image 4">
     </div>
@@ -95,8 +106,26 @@
     </div>
 
     <h1 class="big-purple">Miki Yang</h1>
-    <h2> ESTJ</h2>
+    <h2> 杨运帷</h2>
     <div class="small-text1">Panda Lover</div>
     <div class="small-text2">Chengdu, HK, CT, Chi, NYC</div>
+
+    <img id="play-button" src="button-image.png" alt="Play Button" onclick="playAudio()">
+
+    <audio id="audio-player">
+      <source src="your-audio-file.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <script>
+      function playAudio() {
+        var audio = document.getElementById('audio-player');
+        if (audio.paused) {
+          audio.play();
+        } else {
+          audio.pause();
+        }
+      }
+    </script>
   </body>
 </html>
