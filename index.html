@@ -40,32 +40,47 @@
         margin-left: 20px; 
         clear: right; 
       }
+      
+    .image-container img,
+      .image-container-right img {
+        width: 150px;
+        margin-bottom: 10px;
+        animation: bounce 3s infinite alternate; 
+      }
+
+      @keyframes bounce {
+        0%, 100% {
+          transform: translateY(0);
+        50% {
+          transform: translateY(-20px); 
+        }
+      }
     </style>
   </head>
   <body>
     <div class="image-container">
-      <img src="88rising.webp" alt="Image 1">
+      <img src="88.webp" alt="Image 1">
     </div>
     <div class="image-container">
-      <img src="" alt="Image 2">
+      <img src="linabell.webp" alt="Image 2">
     </div>
     <div class="image-container">
-      <img src="image3.jpg" alt="Image 3">
+      <img src="redpanda.webp" alt="Image 3">
     </div>
 
     <!-- Right Images -->
     <div class="image-container-right">
-      <img src="image4.jpg" alt="Image 4">
+      <img src="xiongmao.webp" alt="Image 4">
     </div>
     <div class="image-container-right">
-      <img src="image5.jpg" alt="Image 5">
+      <img src="fubao.jpg" alt="Image 5">
     </div>
     <div class="image-container-right">
-      <img src="image6.jpg" alt="Image 6">
+      <img src="khalil.jpg" alt="Image 6">
     </div>
 
-    <h1 class="big-purple"> Miki Yang O(∩_∩)O </h1>
-    <h2> by Miki </h2>
+    <h1 class="big-purple">Miki Yang</h1>
+    <h2> 杨运帷</h2>
     <h1 class="big-purple"> Panda Lover </h1>
     <h1 class="big-purple"> Chengdu, HK, CT, Chi, NYC </h1>
   </body>
