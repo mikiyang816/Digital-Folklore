@@ -6,13 +6,12 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap">
 
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+    <style> @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap");
 
       body {
         background-image: url(vaporwave2.jpg);
         cursor: url(pointer.gif), auto;
-        font-family: 'Pixelify Sans', sans-serif;
+        font-family: "Pixelify Sans", sans-serif;
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
@@ -69,18 +68,18 @@
 
       .small-text1 {
         font-size: 50px;
-        font-family: 'Oswald', sans-serif;
+        font-family: "Oswald", sans-serif;
         align-items: center;
         margin-right: 40px;
-        color:  #b482ae;
+        color: #b482ae;
       }
 
       .small-text2 {
         font-size: 35px;
-        font-family: 'Oswald', sans-serif;
+        font-family: "Oswald", sans-serif;
         align-items: center;
         margin-left: 30px;
-        color:  #b350a7;
+        color: #b350a7;
       }
 
       #play-button {
@@ -165,7 +164,7 @@
     
     <script>
       function playAudio() {
-        var audio = document.getElementById('audio-player');
+        let audio = document.getElementById('audio-player');
         if (audio.paused) {
           audio.play();
         } else {
