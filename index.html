@@ -29,19 +29,45 @@
         margin-right: 20px; 
       }
 
-      .image-container {
+     .image-container {
         float: left;
         margin-right: 20px;
         clear: left;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+      }
+      
+      .image-container img {
+        width: 150px;
+        margin-bottom: 10px;
+        animation: bounce 3s infinite alternate;
+      }
+      
+      @keyframes bounce {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
       }
 
       .image-container-right {
         float: right;
-        margin-left: 50px;
+        margin-left: 20px;
         clear: right;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+      }
+      
+        .image-container-right img {
+        width: 150px; 
+        margin-bottom: 10px;
+        animation: bounce 3s infinite alternate;
       }
 
-    
       .small-text1 {
         font-size: 40px;
         font-family: 'Oswald', sans-serif;
@@ -88,6 +114,12 @@
     <div class="image-container">
       <img src="vaporkhalil.jpeg" alt="Image 3">
     </div>
+       <div class="image-container">
+      <img src="bp.jpeg" alt="Image 4 added">
+    </div>
+    <div class="image-container">
+      <img src="weeknd.jpeg" alt="Image 4 added">
+    </div>
 
     <div class="image-container-right">
       <img src="vaporpanda.jpeg" alt="Image 4">
@@ -97,6 +129,12 @@
     </div>
     <div class="image-container-right">
       <img src="vaporlina.jpeg" alt="Image 6">
+    </div>
+    <div class="image-container-right">
+      <img src="samoid.jpeg" alt="Image 7">
+    </div>
+    <div class="image-container-right">
+      <img src="gr.jpeg" alt="Image 8">
     </div>
 
     <h1 class="big-purple">Miki Yang 🐑</h1>
